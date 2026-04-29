@@ -323,7 +323,7 @@ function registerUser() {
     errorElement.textContent = 'Création du compte en cours...';
     
     // Envoi au serveur
-    fetch('http://localhost:8888/smartbuy/register.php', {
+    fetch('http://localhost:8888/smartbuy/PPE1/register.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userData)
@@ -381,7 +381,7 @@ function loginUser() {
     };
     
     // Envoi des données au serveur
-    fetch('http://localhost:8888/smartbuy/login.php', {
+    fetch('http://localhost:8888/smartbuy/PPE1/login.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
